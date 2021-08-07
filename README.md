@@ -3,6 +3,11 @@ An api to calculate sum of two distances with different units and return the res
 
 ---
 ### How to use
+- Copy __.env.example__ file to __.env__ and edit database credentials there
+- Run __composer install__
+- Run __php artisan key:generate__
+- Run __./vendor/bin/sail up__
+- Open __[http://localhost/doc](http://localhost/doc)__
 
 ---
 
