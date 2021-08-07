@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Sum of Distances
+  contact: {}
+  version: '1.0'
+paths:
+  /api/calculate-distance:
+    post:
+      summary: Calculate Sum of Two Distances
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+                type: object
+                properties:
+                  distances:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        value:
+                          type: number
+                          example: 1.5
+                        unit:
+                          type: string
+                          example: meter
+                    minItems: 2
+                    maxItems: 2
+                  response_unit:
+                    type: string
+                    example: yard
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                      unit:
+                        type: string
+                    example:   # Sample object
+                      value: 1.6
+                      unit: meter
