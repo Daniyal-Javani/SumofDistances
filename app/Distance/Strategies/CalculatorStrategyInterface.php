@@ -4,5 +4,5 @@ namespace App\Distance\Strategies;
 
 interface CalculatorStrategyInterface
 {
-    public function calculate(array $distances);
+    public function calculate(array $distances): float;
 }

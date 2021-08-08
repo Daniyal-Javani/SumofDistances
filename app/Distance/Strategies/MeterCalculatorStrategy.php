@@ -8,7 +8,7 @@ use Exception;
 
 class MeterCalculatorStrategy implements CalculatorStrategyInterface
 {
-    public function calculate(array $distances)
+    public function calculate(array $distances): float
     {
         $sum = 0;
         foreach ($distances as $distance) {

@@ -11,12 +11,12 @@ class YardDistance implements DistanceInterface
     ) {
     }
 
-    public function getMeter()
+    public function getMeter(): float
     {
         return $this->value / 1.09361;
     }
 
-    public function getYard()
+    public function getYard(): float
     {
         return $this->value;
     }

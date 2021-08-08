@@ -6,7 +6,7 @@ use Exception;
 
 class DistanceFactory
 {
-    public static function make(string $unit, float $value)
+    public static function make(string $unit, float $value): DistanceInterface
     {
         switch ($unit) {
             case 'meter':

@@ -4,6 +4,6 @@ namespace App\Distance;
 
 interface DistanceInterface
 {
-    public function getMeter();
-    public function getYard();
+    public function getMeter(): float;
+    public function getYard(): float;
 }

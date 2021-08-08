@@ -23,7 +23,7 @@ class CalculatorStrategyContexts
         }
     }
 
-    public function calculate(array $distances)
+    public function calculate(array $distances): float
     {
         return round($this->strategy->calculate($distances), 4);
     }
